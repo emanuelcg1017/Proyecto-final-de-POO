@@ -1,0 +1,157 @@
+[
+  {
+    "ContainingType": "SistemaMovilidad.Controllers.EstudiantesController",
+    "Method": "ConsultarPorHorario",
+    "RelativePath": "api/Estudiantes/ConsultarPorHorario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dia",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jornada",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[SistemaMovilidad.DTOs.EstudianteDtos\u002BEstudianteResponse, SistemaMovilidad, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SistemaMovilidad.Controllers.EstudiantesController",
+    "Method": "ConsultarPorUniversidad",
+    "RelativePath": "api/Estudiantes/ConsultarPorUniversidad",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "institucion",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[SistemaMovilidad.DTOs.EstudianteDtos\u002BEstudianteResponse, SistemaMovilidad, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SistemaMovilidad.Controllers.EstudiantesController",
+    "Method": "ConsultarPorZona",
+    "RelativePath": "api/Estudiantes/ConsultarPorZona",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "zona",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[SistemaMovilidad.DTOs.EstudianteDtos\u002BEstudianteResponse, SistemaMovilidad, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SistemaMovilidad.Controllers.EstudiantesController",
+    "Method": "ObtenerTodos",
+    "RelativePath": "api/Estudiantes/ObtenerTodos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[SistemaMovilidad.DTOs.EstudianteDtos\u002BEstudianteResponse, SistemaMovilidad, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SistemaMovilidad.Controllers.EstudiantesController",
+    "Method": "Registrar",
+    "RelativePath": "api/Estudiantes/RegistrarEstudiante",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SistemaMovilidad.DTOs.EstudianteDtos\u002BRegistroEstudianteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SistemaMovilidad.DTOs.EstudianteDtos\u002BEstudianteResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SistemaMovilidad.Controllers.EstudiantesController",
+    "Method": "ReporteHorarioPorDia",
+    "RelativePath": "api/Estudiantes/ReporteHorarioPorDia",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dia",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SistemaMovilidad.DTOs.EstudianteDtos\u002BReporteHorarioDiaResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
