@@ -20,7 +20,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[SistemaMovilidad.DTOs.EstudianteDtos\u002BEstudianteResponse, SistemaMovilidad, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[SistemaMovilidad.Objetos.DTOs.EstudianteDtos\u002BEstudianteResponse, SistemaMovilidad.Objetos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -46,7 +46,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[SistemaMovilidad.DTOs.EstudianteDtos\u002BEstudianteResponse, SistemaMovilidad, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[SistemaMovilidad.Objetos.DTOs.EstudianteDtos\u002BEstudianteResponse, SistemaMovilidad.Objetos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -72,7 +72,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[SistemaMovilidad.DTOs.EstudianteDtos\u002BEstudianteResponse, SistemaMovilidad, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[SistemaMovilidad.Objetos.DTOs.EstudianteDtos\u002BEstudianteResponse, SistemaMovilidad.Objetos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -92,7 +92,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[SistemaMovilidad.DTOs.EstudianteDtos\u002BEstudianteResponse, SistemaMovilidad, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[SistemaMovilidad.Objetos.DTOs.EstudianteDtos\u002BEstudianteResponse, SistemaMovilidad.Objetos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -112,13 +112,13 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "SistemaMovilidad.DTOs.EstudianteDtos\u002BRegistroEstudianteRequest",
+        "Type": "SistemaMovilidad.Objetos.DTOs.EstudianteDtos\u002BRegistroEstudianteRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "SistemaMovilidad.DTOs.EstudianteDtos\u002BEstudianteResponse",
+        "Type": "SistemaMovilidad.Objetos.DTOs.EstudianteDtos\u002BEstudianteResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -144,7 +144,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "SistemaMovilidad.DTOs.EstudianteDtos\u002BReporteHorarioDiaResponse",
+        "Type": "SistemaMovilidad.Objetos.DTOs.EstudianteDtos\u002BReporteHorarioDiaResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",

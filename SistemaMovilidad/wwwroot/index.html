@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Movilidad Estudiantil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --navy: #0f1b2d;
+            --navy2: #162032;
+            --blue: #2563eb;
+            --blue2: #1d4ed8;
+            --cyan: #06b6d4;
+            --green: #10b981;
+            --amber: #f59e0b;
+            --red: #ef4444;
+            --text: #e2e8f0;
+            --muted: #64748b;
+            --border: #1e3a5f;
+            --card: #162032;
+            --input: #0f1b2d;
+            --radius: 10px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: var(--navy);
+            color: var(--text);
+            font-family: 'Space Grotesk', sans-serif;
+            min-height: 100vh;
+        }
+
+        /* ── HEADER ── */
+        header {
+            background: linear-gradient(135deg, #0a1628 0%, #162032 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .logo {
+            width: 44px;
+            height: 44px;
+            background: var(--blue);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+        }
+
+        header h1 {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 0.8rem;
+            color: var(--muted);
+            margin-top: 2px;
+        }
+
+        /* ── NAV TABS ── */
+        nav {
+            display: flex;
+            gap: 4px;
+            padding: 20px 40px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .tab {
+            padding: 10px 20px;
+            border-radius: var(--radius) var(--radius) 0 0;
+            cursor: pointer;
+            font-size: 0.88rem;
+            font-weight: 500;
+            color: var(--muted);
+            border: 1px solid transparent;
+            border-bottom: none;
+            transition: all .2s;
+            background: transparent;
+        }
+
+            .tab:hover {
+                color: var(--text);
+                background: var(--navy2);
+            }
+
+            .tab.active {
+                color: var(--cyan);
+                background: var(--card);
+                border-color: var(--border);
+            }
+
+        /* ── MAIN ── */
+        main {
+            padding: 30px 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section {
+            display: none;
+        }
+
+            .section.active {
+                display: block;
+            }
+
+        /* ── CARDS ── */
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+
+            .card h2 {
+                font-size: 1rem;
+                font-weight: 600;
+                color: var(--cyan);
+                margin-bottom: 18px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+        /* ── FORM ── */
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+            .form-group.full {
+                grid-column: 1 / -1;
+            }
+
+        label {
+            font-size: 0.8rem;
+            color: var(--muted);
+            font-weight: 500;
+        }
+
+        input, select {
+            background: var(--input);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 14px;
+            color: var(--text);
+            font-family: inherit;
+            font-size: 0.88rem;
+            transition: border-color .2s;
+        }
+
+            input:focus, select:focus {
+                outline: none;
+                border-color: var(--blue);
+            }
+
+            select option {
+                background: var(--navy);
+            }
+
+        /* ── HORARIOS ── */
+		.horarios-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+			gap: 10px;
+			margin-top: 4px;
+		}
+
+        .horario-dia {
+            background: var(--input);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px;
+        }
+
+            .horario-dia label {
+                font-size: 0.78rem;
+                font-weight: 600;
+                color: var(--cyan);
+                display: block;
+                margin-bottom: 8px;
+                text-transform: uppercase;
+                letter-spacing: .05em;
+            }
+
+            .horario-dia .times {
+                display: flex;
+                gap: 6px;
+                align-items: center;
+            }
+
+            .horario-dia input {
+                flex: 1;
+                padding: 7px 10px;
+                font-family: 'JetBrains Mono', monospace;
+                font-size: 0.82rem;
+            }
+
+            .horario-dia span {
+                font-size: 0.75rem;
+                color: var(--muted);
+            }
+
+        /* ── BUTTONS ── */
+        .btn {
+            padding: 10px 22px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.88rem;
+            font-weight: 600;
+            transition: all .2s;
+        }
+
+        .btn-primary {
+            background: var(--blue);
+            color: #fff;
+        }
+
+            .btn-primary:hover {
+                background: var(--blue2);
+                transform: translateY(-1px);
+            }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--cyan);
+            border: 1px solid var(--cyan);
+        }
+
+            .btn-secondary:hover {
+                background: rgba(6,182,212,.1);
+            }
+
+        .btn-row {
+            display: flex;
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        /* ── ALERT ── */
+        .alert {
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            margin-top: 14px;
+            display: none;
+        }
+
+            .alert.success {
+                background: rgba(16,185,129,.15);
+                border: 1px solid var(--green);
+                color: var(--green);
+            }
+
+            .alert.error {
+                background: rgba(239,68,68,.15);
+                border: 1px solid var(--red);
+                color: var(--red);
+            }
+
+            .alert.show {
+                display: block;
+            }
+
+        /* ── FILTROS ── */
+        .filtro-row {
+            display: flex;
+            gap: 10px;
+            align-items: flex-end;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+            .filtro-row .form-group {
+                flex: 1;
+                min-width: 160px;
+            }
+
+        /* ── TABLA ── */
+        .tabla-wrap {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+
+        thead th {
+            background: rgba(37,99,235,.2);
+            color: var(--cyan);
+            padding: 12px 14px;
+            text-align: left;
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            border-bottom: 1px solid var(--border);
+        }
+
+        tbody tr {
+            border-bottom: 1px solid rgba(30,58,95,.5);
+            transition: background .15s;
+        }
+
+            tbody tr:hover {
+                background: rgba(37,99,235,.07);
+            }
+
+        tbody td {
+            padding: 12px 14px;
+            color: var(--text);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .badge-uni {
+            background: rgba(37,99,235,.2);
+            color: #93c5fd;
+        }
+
+        .badge-esc {
+            background: rgba(16,185,129,.2);
+            color: #6ee7b7;
+        }
+
+        .empty {
+            text-align: center;
+            padding: 40px;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        /* ── REPORTE / GRÁFICA ── */
+        .reporte-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin-bottom: 24px;
+        }
+
+        .stat-box {
+            background: var(--input);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+        }
+
+            .stat-box .num {
+                font-size: 2rem;
+                font-weight: 700;
+                color: var(--cyan);
+                font-family: 'JetBrains Mono', monospace;
+            }
+
+            .stat-box .lbl {
+                font-size: 0.78rem;
+                color: var(--muted);
+                margin-top: 4px;
+            }
+
+        .chart-container {
+            position: relative;
+        }
+
+        .chart-title {
+            font-size: 0.82rem;
+            color: var(--muted);
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        canvas {
+            width: 100% !important;
+        }
+
+        /* ── LOADING ── */
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 30px;
+            color: var(--muted);
+        }
+
+            .loading.show {
+                display: block;
+            }
+
+        .spinner {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border: 3px solid var(--border);
+            border-top-color: var(--blue);
+            border-radius: 50%;
+            animation: spin .7s linear infinite;
+            margin-bottom: 8px;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+		@media (max-width: 768px) {
+
+			header {
+				padding: 20px;
+			}
+
+			nav {
+				padding: 20px 20px 0;
+			}
+
+			main {
+				padding: 20px;
+			}
+
+			.form-grid {
+				grid-template-columns: 1fr;
+			}
+
+			.reporte-stats {
+				grid-template-columns: 1fr;
+			}
+
+			.horarios-grid {
+				grid-template-columns: 1fr;
+			}
+
+			.btn-row {
+				flex-direction: column;
+			}
+
+			.btn {
+				width: 100%;
+			}
+
+			.filtro-row {
+				flex-direction: column;
+				align-items: stretch;
+			}
+
+				.filtro-row .form-group {
+					width: 100%;
+				}
+		}
+    </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🎓</div>
+  <div>
+    <h1>Sistema de Movilidad Estudiantil</h1>
+    <p>Alcaldía Municipal — Registro y Caracterización de Estudiantes</p>
+  </div>
+</header>
+
+<nav>
+    <button class="tab active" onclick="showTab('registro', this)">
+        📝 Registrar Estudiante
+    </button>
+
+    <button class="tab" onclick="showTab('consultas', this)">
+        🔍 Consultas
+    </button>
+
+    <button class="tab" onclick="showTab('todos', this)">
+        👥 Todos los Estudiantes
+    </button>
+
+    <button class="tab" onclick="showTab('reporte', this)">
+        📊 Reporte Estadístico
+    </button>
+</nav>
+
+<main>
+
+  <!-- ══ REGISTRO ══ -->
+  <div id="tab-registro" class="section active">
+    <div class="card">
+      <h2>📝 Registro de Estudiante</h2>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Nombre completo</label>
+          <input type="text" id="reg-nombre" placeholder="Ej: Carlos Andrés Ruiz"/>
+        </div>
+        <div class="form-group">
+          <label>Número de documento</label>
+          <input type="text" id="reg-documento" placeholder="Ej: 1001234567"/>
+        </div>
+        <div class="form-group">
+          <label>Zona de residencia</label>
+          <input type="text" id="reg-zona" placeholder="Ej: San Vicente, Santa Rita"/>
+        </div>
+        <div class="form-group">
+          <label>Institución educativa</label>
+          <input type="text" id="reg-institucion" placeholder="Ej: Universidad de Antioquia"/>
+        </div>
+        <div class="form-group full">
+          <label>Tipo de estudiante</label>
+          <select id="reg-tipo" onchange="toggleHorarios()">
+            <option value="Universitario">Universitario</option>
+            <option value="Escolar">Escolar</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="horarios-section" style="margin-top:18px;">
+        <label style="font-size:.85rem; color:var(--muted); font-weight:500; display:block; margin-bottom:10px;">
+          Horarios por día — deja en 00:00 si no asiste ese día
+        </label>
+        <div class="horarios-grid">
+          <div class="horario-dia">
+            <label>Lunes</label>
+            <div class="times">
+              <input type="time" id="h-lunes-e" value="00:00"/>
+              <span>→</span>
+              <input type="time" id="h-lunes-s" value="00:00"/>
+            </div>
+          </div>
+          <div class="horario-dia">
+            <label>Martes</label>
+            <div class="times">
+              <input type="time" id="h-martes-e" value="00:00"/>
+              <span>→</span>
+              <input type="time" id="h-martes-s" value="00:00"/>
+            </div>
+          </div>
+          <div class="horario-dia">
+            <label>Miércoles</label>
+            <div class="times">
+              <input type="time" id="h-miercoles-e" value="00:00"/>
+              <span>→</span>
+              <input type="time" id="h-miercoles-s" value="00:00"/>
+            </div>
+          </div>
+          <div class="horario-dia">
+            <label>Jueves</label>
+            <div class="times">
+              <input type="time" id="h-jueves-e" value="00:00"/>
+              <span>→</span>
+              <input type="time" id="h-jueves-s" value="00:00"/>
+            </div>
+          </div>
+          <div class="horario-dia">
+            <label>Viernes</label>
+            <div class="times">
+              <input type="time" id="h-viernes-e" value="00:00"/>
+              <span>→</span>
+              <input type="time" id="h-viernes-s" value="00:00"/>
+            </div>
+          </div>
+          <div class="horario-dia">
+            <label>Sábado</label>
+            <div class="times">
+              <input type="time" id="h-sabado-e" value="00:00"/>
+              <span>→</span>
+              <input type="time" id="h-sabado-s" value="00:00"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="escolar-msg" style="display:none; margin-top:14px; padding:12px 16px; background:rgba(16,185,129,.1); border:1px solid var(--green); border-radius:8px; font-size:.85rem; color:var(--green);">
+        ✅ Para estudiantes escolares el horario se genera automáticamente: Lunes a Viernes de 07:00 a 13:00.
+      </div>
+
+      <div class="btn-row">
+        <button class="btn btn-primary" onclick="registrarEstudiante()">Registrar Estudiante</button>
+        <button class="btn btn-secondary" onclick="limpiarFormulario()">Limpiar</button>
+      </div>
+      <div id="reg-alert" class="alert"></div>
+    </div>
+  </div>
+
+  <!-- ══ CONSULTAS ══ -->
+  <div id="tab-consultas" class="section">
+
+    <!-- Por zona -->
+    <div class="card">
+      <h2>📍 Consulta por Zona de Residencia</h2>
+      <div class="filtro-row">
+        <div class="form-group">
+          <label>Zona o barrio</label>
+          <input type="text" id="f-zona" placeholder="Ej: San Vicente, Santa Rita" />
+        </div>
+        <button class="btn btn-primary" onclick="consultarPorZona()">Buscar</button>
+      </div>
+      <div id="res-zona"></div>
+    </div>
+
+    <!-- Por universidad -->
+    <div class="card">
+      <h2>🏫 Consulta por Universidad</h2>
+      <div class="filtro-row">
+        <div class="form-group">
+          <label>Nombre de la institución</label>
+          <input type="text" id="f-uni" placeholder="Ej: EAFIT, Antioquia, ITM"/>
+        </div>
+        <button class="btn btn-primary" onclick="consultarPorUniversidad()">Buscar</button>
+      </div>
+      <div id="res-uni"></div>
+    </div>
+
+    <!-- Por horario -->
+    <div class="card">
+      <h2>🕐 Consulta por Horario y Jornada</h2>
+      <div class="filtro-row">
+        <div class="form-group">
+          <label>Día</label>
+          <select id="f-dia">
+            <option value="Lunes">Lunes</option>
+            <option value="Martes">Martes</option>
+            <option value="Miercoles">Miércoles</option>
+            <option value="Jueves">Jueves</option>
+            <option value="Viernes">Viernes</option>
+            <option value="Sabado">Sábado</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Jornada (opcional)</label>
+          <select id="f-jornada">
+            <option value="">Todas</option>
+            <option value="mañana">Mañana (6:00 - 11:59)</option>
+            <option value="tarde">Tarde (12:00 - 17:59)</option>
+            <option value="noche">Noche (18:00 en adelante)</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" onclick="consultarPorHorario()">Buscar</button>
+      </div>
+      <div id="res-horario"></div>
+    </div>
+  </div>
+
+  <!-- ══ TODOS ══ -->
+  <div id="tab-todos" class="section">
+    <div class="card">
+      <h2>👥 Todos los Estudiantes Registrados</h2>
+      <div class="btn-row" style="margin-top:0; margin-bottom:16px;">
+        <button class="btn btn-primary" onclick="cargarTodos()">Actualizar lista</button>
+      </div>
+      <div id="res-todos">
+        <div class="empty">Haz clic en "Actualizar lista" para cargar los estudiantes.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ REPORTE ══ -->
+  <div id="tab-reporte" class="section">
+    <div class="card">
+      <h2>📊 Reporte de Entradas y Salidas por Día</h2>
+      <div class="filtro-row">
+        <div class="form-group">
+          <label>Selecciona el día</label>
+          <select id="r-dia">
+            <option value="Lunes">Lunes</option>
+            <option value="Martes">Martes</option>
+            <option value="Miercoles">Miércoles</option>
+            <option value="Jueves">Jueves</option>
+            <option value="Viernes">Viernes</option>
+            <option value="Sabado">Sábado</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" onclick="generarReporte()">Generar Reporte</button>
+      </div>
+
+      <div id="reporte-resultado" style="display:none;">
+        <div class="reporte-stats">
+          <div class="stat-box">
+            <div class="num" id="stat-total">0</div>
+            <div class="lbl">Estudiantes ese día</div>
+          </div>
+          <div class="stat-box">
+            <div class="num" id="stat-entradas">0</div>
+            <div class="lbl">Franjas de entrada</div>
+          </div>
+          <div class="stat-box">
+            <div class="num" id="stat-salidas">0</div>
+            <div class="lbl">Franjas de salida</div>
+          </div>
+        </div>
+
+        <div class="chart-container">
+          <div class="chart-title">Distribución de entradas y salidas por hora</div>
+          <canvas id="chartHorario" height="300"></canvas>
+        </div>
+      </div>
+
+      <div id="reporte-empty" class="empty">
+        Selecciona un día y genera el reporte para ver la gráfica.
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+	const API = 'https://localhost:7096/api/Estudiantes';
+  let chartInstance = null;
+
+  // ── TABS ──────────────────────────────────────────────────────────────────
+	function showTab(name, element) {
+
+		document.querySelectorAll('.section').forEach(section => {
+			section.classList.remove('active');
+		});
+
+		document.querySelectorAll('.tab').forEach(tab => {
+			tab.classList.remove('active');
+		});
+
+		document.getElementById('tab-' + name).classList.add('active');
+
+		element.classList.add('active');
+	}
+
+  // ── TIPO DE ESTUDIANTE ────────────────────────────────────────────────────
+  function toggleHorarios() {
+    const tipo = document.getElementById('reg-tipo').value;
+    document.getElementById('horarios-section').style.display = tipo === 'Universitario' ? 'block' : 'none';
+    document.getElementById('escolar-msg').style.display = tipo === 'Escolar' ? 'block' : 'none';
+  }
+
+  // ── REGISTRO ──────────────────────────────────────────────────────────────
+  async function registrarEstudiante() {
+    const nombre     = document.getElementById('reg-nombre').value.trim();
+    const documento  = document.getElementById('reg-documento').value.trim();
+    const zona       = document.getElementById('reg-zona').value.trim();
+    const institucion= document.getElementById('reg-institucion').value.trim();
+    const tipo       = document.getElementById('reg-tipo').value;
+
+    if (!nombre || !documento || !zona || !institucion) {
+      mostrarAlerta('reg-alert', 'error', 'Por favor completa todos los campos obligatorios.');
+      return;
+    }
+
+    const dias = ['lunes','martes','miercoles','jueves','viernes','sabado'];
+    const nombDias = ['Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'];
+    const horarios = [];
+
+    if (tipo === 'Universitario') {
+      dias.forEach((d, i) => {
+        const entrada = document.getElementById(`h-${d}-e`).value;
+        const salida  = document.getElementById(`h-${d}-s`).value;
+        if (entrada !== '00:00' && salida !== '00:00') {
+          horarios.push({ dia: nombDias[i], horaEntrada: entrada, horaSalida: salida });
+        }
+      });
+    }
+
+    const body = { nombre, documento, zonaResidencia: zona, institucion, tipo, horarios };
+
+    try {
+      const res = await fetch(`${API}/RegistrarEstudiante`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+      const data = await res.json();
+      if (res.ok) {
+        mostrarAlerta('reg-alert', 'success', `✅ Estudiante "${data.nombre}" registrado correctamente con ID ${data.id}.`);
+        limpiarFormulario();
+      } else {
+        mostrarAlerta('reg-alert', 'error', '❌ ' + (data.mensaje || 'Error al registrar.'));
+      }
+    } catch (e) {
+      mostrarAlerta('reg-alert', 'error', '❌ No se pudo conectar con la API. Asegúrate de que esté corriendo.');
+    }
+  }
+
+  function limpiarFormulario() {
+    ['reg-nombre','reg-documento','reg-zona','reg-institucion'].forEach(id => document.getElementById(id).value = '');
+    ['lunes','martes','miercoles','jueves','viernes','sabado'].forEach(d => {
+      document.getElementById(`h-${d}-e`).value = '00:00';
+      document.getElementById(`h-${d}-s`).value = '00:00';
+    });
+  }
+
+  // ── CONSULTAS ─────────────────────────────────────────────────────────────
+  async function consultarPorZona() {
+    const zona = document.getElementById('f-zona').value.trim();
+    if (!zona) return;
+    const data = await fetchGet(`${API}/ConsultarPorZona?zona=${encodeURIComponent(zona)}`);
+    document.getElementById('res-zona').innerHTML = renderTabla(data, zona, 'zona');
+  }
+
+  async function consultarPorUniversidad() {
+    const uni = document.getElementById('f-uni').value.trim();
+    if (!uni) return;
+    const data = await fetchGet(`${API}/ConsultarPorUniversidad?institucion=${encodeURIComponent(uni)}`);
+    document.getElementById('res-uni').innerHTML = renderTabla(data, uni, 'universidad');
+  }
+
+  async function consultarPorHorario() {
+    const dia     = document.getElementById('f-dia').value;
+    const jornada = document.getElementById('f-jornada').value;
+    let url = `${API}/ConsultarPorHorario?dia=${encodeURIComponent(dia)}`;
+    if (jornada) url += `&jornada=${encodeURIComponent(jornada)}`;
+    const data = await fetchGet(url);
+    document.getElementById('res-horario').innerHTML = renderTabla(data, dia, 'horario');
+  }
+
+  async function cargarTodos() {
+    const data = await fetchGet(`${API}/ObtenerTodos`);
+    document.getElementById('res-todos').innerHTML = renderTabla(data, '', 'todos');
+  }
+
+  // ── REPORTE ───────────────────────────────────────────────────────────────
+  async function generarReporte() {
+    const dia = document.getElementById('r-dia').value;
+    const data = await fetchGet(`${API}/ReporteHorarioPorDia?dia=${encodeURIComponent(dia)}`);
+
+    if (!data) return;
+
+    document.getElementById('reporte-resultado').style.display = 'block';
+    document.getElementById('reporte-empty').style.display = 'none';
+    document.getElementById('stat-total').textContent    = data.totalEstudiantesEseDia;
+    document.getElementById('stat-entradas').textContent = data.entradas.length;
+    document.getElementById('stat-salidas').textContent  = data.salidas.length;
+
+    const todasHoras = [...new Set([
+      ...data.entradas.map(e => e.hora),
+      ...data.salidas.map(s => s.hora)
+    ])].sort();
+
+    const cantEntradas = todasHoras.map(h => {
+      const f = data.entradas.find(e => e.hora === h);
+      return f ? f.cantidad : 0;
+    });
+    const cantSalidas = todasHoras.map(h => {
+      const f = data.salidas.find(s => s.hora === h);
+      return f ? f.cantidad : 0;
+    });
+
+    if (chartInstance) chartInstance.destroy();
+
+    chartInstance = new Chart(document.getElementById('chartHorario'), {
+      type: 'bar',
+      data: {
+        labels: todasHoras,
+        datasets: [
+          {
+            label: 'Entradas',
+            data: cantEntradas,
+            backgroundColor: 'rgba(37,99,235,0.7)',
+            borderColor: '#2563eb',
+            borderWidth: 1,
+            borderRadius: 4,
+          },
+          {
+            label: 'Salidas',
+            data: cantSalidas,
+            backgroundColor: 'rgba(6,182,212,0.7)',
+            borderColor: '#06b6d4',
+            borderWidth: 1,
+            borderRadius: 4,
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            labels: { color: '#e2e8f0', font: { family: 'Space Grotesk' } }
+          },
+          tooltip: {
+            backgroundColor: '#162032',
+            titleColor: '#06b6d4',
+            bodyColor: '#e2e8f0',
+            borderColor: '#1e3a5f',
+            borderWidth: 1,
+          }
+        },
+        scales: {
+          x: {
+            ticks: { color: '#94a3b8', font: { family: 'JetBrains Mono', size: 11 } },
+            grid:  { color: 'rgba(30,58,95,0.5)' },
+            title: { display: true, text: 'Hora', color: '#64748b', font: { family: 'Space Grotesk' } }
+          },
+          y: {
+            ticks: { color: '#94a3b8', stepSize: 1, font: { family: 'JetBrains Mono' } },
+            grid:  { color: 'rgba(30,58,95,0.5)' },
+            title: { display: true, text: 'Cantidad de estudiantes', color: '#64748b', font: { family: 'Space Grotesk' } },
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  }
+
+  // ── HELPERS ───────────────────────────────────────────────────────────────
+  async function fetchGet(url) {
+    try {
+      const res = await fetch(url);
+      if (!res.ok) return null;
+      return await res.json();
+    } catch {
+      return null;
+    }
+  }
+
+  function renderTabla(data, filtro, tipo) {
+    if (!data || data.length === 0)
+      return `<div class="empty">No se encontraron estudiantes${filtro ? ' para "' + filtro + '"' : ''}.</div>`;
+
+    const filas = data.map(e => {
+      const badge = e.tipo === 'Universitario'
+        ? `<span class="badge badge-uni">Universitario</span>`
+        : `<span class="badge badge-esc">Escolar</span>`;
+
+      const diasAsiste = (e.horarios || [])
+        .filter(h => h.horaEntrada !== '00:00')
+        .map(h => `${h.dia} ${h.horaEntrada}–${h.horaSalida}`)
+        .join(', ') || '—';
+
+      return `<tr>
+        <td>${e.id}</td>
+        <td>${e.nombre}</td>
+        <td style="font-family:'JetBrains Mono',monospace; font-size:.82rem;">${e.documento}</td>
+        <td>${e.zonaResidencia}</td>
+        <td>${e.institucion}</td>
+        <td>${badge}</td>
+        <td style="font-size:.78rem; color:var(--muted);">${diasAsiste}</td>
+      </tr>`;
+    }).join('');
+
+    return `
+      <div class="tabla-wrap">
+        <p style="font-size:.82rem; color:var(--muted); margin-bottom:10px;">${data.length} estudiante(s) encontrado(s)</p>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th><th>Nombre</th><th>Documento</th>
+              <th>Zona</th><th>Institución</th><th>Tipo</th><th>Horarios</th>
+            </tr>
+          </thead>
+          <tbody>${filas}</tbody>
+        </table>
+      </div>`;
+  }
+
+  function mostrarAlerta(id, tipo, msg) {
+    const el = document.getElementById(id);
+    el.className = `alert ${tipo} show`;
+    el.textContent = msg;
+    setTimeout(() => el.classList.remove('show'), 5000);
+  }
+</script>
+</body>
+</html>

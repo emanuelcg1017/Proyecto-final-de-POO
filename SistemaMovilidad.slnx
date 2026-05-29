@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="SistemaMovilidad.Datos/SistemaMovilidad.Datos.csproj" Id="2a735b68-1f1b-467f-92f2-eb2aa56ca1b7" />
+  <Project Path="SistemaMovilidad.Objetos/SistemaMovilidad.Objetos.csproj" Id="930e155b-ed7c-48a9-9846-a68ea26c7567" />
   <Project Path="SistemaMovilidad/SistemaMovilidad.csproj" />
 </Solution>

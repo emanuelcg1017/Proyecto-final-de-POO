@@ -1,4 +1,4 @@
-﻿namespace SistemaMovilidad.Models
+﻿namespace SistemaMovilidad.Objetos.Models
 {
 
 	public enum TipoEstudiante

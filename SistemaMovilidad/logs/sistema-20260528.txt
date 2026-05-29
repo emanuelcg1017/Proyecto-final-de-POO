@@ -1,0 +1,277 @@
+2026-05-28 21:26:46.415 -05:00 [INF] Sistema de Movilidad Estudiantil iniciado correctamente.
+2026-05-28 21:26:47.001 -05:00 [INF] Now listening on: https://localhost:7096
+2026-05-28 21:26:47.008 -05:00 [INF] Now listening on: http://localhost:5087
+2026-05-28 21:26:47.106 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 21:26:47.121 -05:00 [INF] Hosting environment: Development
+2026-05-28 21:26:47.128 -05:00 [INF] Content root path: C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad
+2026-05-28 21:26:50.232 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/swagger - null null
+2026-05-28 21:26:50.817 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/swagger - 301 null null 590.6613ms
+2026-05-28 21:26:50.834 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/swagger/index.html - null null
+2026-05-28 21:26:51.206 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/swagger/swagger-ui.css - null null
+2026-05-28 21:26:51.207 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/swagger/swagger-ui-bundle.js - null null
+2026-05-28 21:26:51.209 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/swagger/swagger-ui-standalone-preset.js - null null
+2026-05-28 21:26:51.220 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/swagger/index.html - 200 null text/html;charset=utf-8 385.7518ms
+2026-05-28 21:26:51.221 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/_vs/browserLink - null null
+2026-05-28 21:26:51.224 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-28 21:26:51.292 -05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-05-28 21:26:51.300 -05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-05-28 21:26:51.323 -05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-05-28 21:26:51.400 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 176.502ms
+2026-05-28 21:26:51.434 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/swagger/swagger-ui.css - 200 152034 text/css 227.7903ms
+2026-05-28 21:26:51.444 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 237.1668ms
+2026-05-28 21:26:51.456 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 246.9605ms
+2026-05-28 21:26:51.554 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/_vs/browserLink - 200 null text/javascript; charset=UTF-8 332.1455ms
+2026-05-28 21:26:51.692 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/swagger/v1/swagger.json - null null
+2026-05-28 21:26:51.703 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/swagger/favicon-32x32.png - null null
+2026-05-28 21:26:51.925 -05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-05-28 21:26:51.907 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 214.7549ms
+2026-05-28 21:26:51.938 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/swagger/favicon-32x32.png - 200 628 image/png 234.7801ms
+2026-05-28 21:27:01.642 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/api/Estudiantes/ObtenerTodos - null null
+2026-05-28 21:27:01.680 -05:00 [INF] Executing endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ObtenerTodos (SistemaMovilidad)'
+2026-05-28 21:27:01.759 -05:00 [INF] Route matched with {action = "ObtenerTodos", controller = "Estudiantes"}. Executing controller action with signature System.Collections.Generic.List`1[SistemaMovilidad.DTOs.EstudianteDtos+EstudianteResponse] ObtenerTodos() on controller SistemaMovilidad.Controllers.EstudiantesController (SistemaMovilidad).
+2026-05-28 21:27:01.794 -05:00 [INF] Consulta: ObtenerTodos ejecutado.
+2026-05-28 21:27:01.807 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SistemaMovilidad.DTOs.EstudianteDtos+EstudianteResponse, SistemaMovilidad, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-28 21:27:01.851 -05:00 [INF] Executed action SistemaMovilidad.Controllers.EstudiantesController.ObtenerTodos (SistemaMovilidad) in 78.2111ms
+2026-05-28 21:27:01.858 -05:00 [INF] Executed endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ObtenerTodos (SistemaMovilidad)'
+2026-05-28 21:27:01.862 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/api/Estudiantes/ObtenerTodos - 200 null application/json; charset=utf-8 220.0104ms
+2026-05-28 21:45:56.793 -05:00 [INF] Sistema de Movilidad Estudiantil iniciado correctamente.
+2026-05-28 21:45:56.999 -05:00 [INF] Now listening on: https://localhost:7096
+2026-05-28 21:45:57.003 -05:00 [INF] Now listening on: http://localhost:5087
+2026-05-28 21:45:57.083 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 21:45:57.084 -05:00 [INF] Hosting environment: Development
+2026-05-28 21:45:57.085 -05:00 [INF] Content root path: C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad
+2026-05-28 21:45:58.827 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/swagger/index.html - null null
+2026-05-28 21:45:59.359 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-28 21:45:59.360 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/_vs/browserLink - null null
+2026-05-28 21:45:59.366 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/swagger/index.html - 200 null text/html;charset=utf-8 539.8649ms
+2026-05-28 21:45:59.381 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 20.99ms
+2026-05-28 21:45:59.504 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/_vs/browserLink - 200 null text/javascript; charset=UTF-8 144.7685ms
+2026-05-28 21:45:59.610 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/swagger/v1/swagger.json - null null
+2026-05-28 21:45:59.839 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 229.7496ms
+2026-05-28 21:46:03.793 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/api/Estudiantes/ObtenerTodos - null null
+2026-05-28 21:46:03.813 -05:00 [INF] Executing endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ObtenerTodos (SistemaMovilidad)'
+2026-05-28 21:46:03.847 -05:00 [INF] Route matched with {action = "ObtenerTodos", controller = "Estudiantes"}. Executing controller action with signature System.Collections.Generic.List`1[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse] ObtenerTodos() on controller SistemaMovilidad.Controllers.EstudiantesController (SistemaMovilidad).
+2026-05-28 21:46:03.872 -05:00 [INF] Consulta: ObtenerTodos ejecutado.
+2026-05-28 21:46:03.889 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse, SistemaMovilidad.Objetos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-28 21:46:03.913 -05:00 [INF] Executed action SistemaMovilidad.Controllers.EstudiantesController.ObtenerTodos (SistemaMovilidad) in 56.2096ms
+2026-05-28 21:46:03.917 -05:00 [INF] Executed endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ObtenerTodos (SistemaMovilidad)'
+2026-05-28 21:46:03.920 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/api/Estudiantes/ObtenerTodos - 200 null application/json; charset=utf-8 127.179ms
+2026-05-28 21:46:07.697 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/api/Estudiantes/ObtenerTodos - null null
+2026-05-28 21:46:07.706 -05:00 [INF] Executing endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ObtenerTodos (SistemaMovilidad)'
+2026-05-28 21:46:07.709 -05:00 [INF] Route matched with {action = "ObtenerTodos", controller = "Estudiantes"}. Executing controller action with signature System.Collections.Generic.List`1[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse] ObtenerTodos() on controller SistemaMovilidad.Controllers.EstudiantesController (SistemaMovilidad).
+2026-05-28 21:46:07.712 -05:00 [INF] Consulta: ObtenerTodos ejecutado.
+2026-05-28 21:46:07.714 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse, SistemaMovilidad.Objetos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-28 21:46:07.717 -05:00 [INF] Executed action SistemaMovilidad.Controllers.EstudiantesController.ObtenerTodos (SistemaMovilidad) in 4.8638ms
+2026-05-28 21:46:07.720 -05:00 [INF] Executed endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ObtenerTodos (SistemaMovilidad)'
+2026-05-28 21:46:07.722 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/api/Estudiantes/ObtenerTodos - 200 null application/json; charset=utf-8 24.4815ms
+2026-05-28 21:47:33.687 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7096/api/Estudiantes/RegistrarEstudiante - application/json 253
+2026-05-28 21:47:33.711 -05:00 [INF] CORS policy execution successful.
+2026-05-28 21:47:33.716 -05:00 [INF] Executing endpoint 'SistemaMovilidad.Controllers.EstudiantesController.Registrar (SistemaMovilidad)'
+2026-05-28 21:47:33.728 -05:00 [INF] Route matched with {action = "Registrar", controller = "Estudiantes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse] Registrar(RegistroEstudianteRequest) on controller SistemaMovilidad.Controllers.EstudiantesController (SistemaMovilidad).
+2026-05-28 21:47:33.809 -05:00 [INF] Estudiante registrado: emanuel - Documento: 1017930467
+2026-05-28 21:47:33.813 -05:00 [INF] Executing OkObjectResult, writing value of type 'SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse'.
+2026-05-28 21:47:33.818 -05:00 [INF] Executed action SistemaMovilidad.Controllers.EstudiantesController.Registrar (SistemaMovilidad) in 85.3153ms
+2026-05-28 21:47:33.821 -05:00 [INF] Executed endpoint 'SistemaMovilidad.Controllers.EstudiantesController.Registrar (SistemaMovilidad)'
+2026-05-28 21:47:33.824 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7096/api/Estudiantes/RegistrarEstudiante - 200 null application/json; charset=utf-8 136.903ms
+2026-05-28 21:47:37.679 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/api/Estudiantes/ObtenerTodos - null null
+2026-05-28 21:47:37.686 -05:00 [INF] Executing endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ObtenerTodos (SistemaMovilidad)'
+2026-05-28 21:47:37.690 -05:00 [INF] Route matched with {action = "ObtenerTodos", controller = "Estudiantes"}. Executing controller action with signature System.Collections.Generic.List`1[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse] ObtenerTodos() on controller SistemaMovilidad.Controllers.EstudiantesController (SistemaMovilidad).
+2026-05-28 21:47:37.695 -05:00 [INF] Consulta: ObtenerTodos ejecutado.
+2026-05-28 21:47:37.699 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse, SistemaMovilidad.Objetos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-28 21:47:37.704 -05:00 [INF] Executed action SistemaMovilidad.Controllers.EstudiantesController.ObtenerTodos (SistemaMovilidad) in 8.5071ms
+2026-05-28 21:47:37.706 -05:00 [INF] Executed endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ObtenerTodos (SistemaMovilidad)'
+2026-05-28 21:47:37.708 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/api/Estudiantes/ObtenerTodos - 200 null application/json; charset=utf-8 28.7909ms
+2026-05-28 21:47:50.416 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/api/Estudiantes/ConsultarPorZona?zona=oelo - null null
+2026-05-28 21:47:50.423 -05:00 [INF] Executing endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorZona (SistemaMovilidad)'
+2026-05-28 21:47:50.428 -05:00 [INF] Route matched with {action = "ConsultarPorZona", controller = "Estudiantes"}. Executing controller action with signature System.Collections.Generic.List`1[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse] ConsultarPorZona(System.String) on controller SistemaMovilidad.Controllers.EstudiantesController (SistemaMovilidad).
+2026-05-28 21:47:50.440 -05:00 [INF] Consulta por zona: oelo
+2026-05-28 21:47:50.443 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse, SistemaMovilidad.Objetos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-28 21:47:50.445 -05:00 [INF] Executed action SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorZona (SistemaMovilidad) in 13.8413ms
+2026-05-28 21:47:50.448 -05:00 [INF] Executed endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorZona (SistemaMovilidad)'
+2026-05-28 21:47:50.449 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/api/Estudiantes/ConsultarPorZona?zona=oelo - 200 null application/json; charset=utf-8 32.91ms
+2026-05-28 21:48:12.785 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/api/Estudiantes/ConsultarPorZona?zona=santa%20 - null null
+2026-05-28 21:48:12.800 -05:00 [INF] Executing endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorZona (SistemaMovilidad)'
+2026-05-28 21:48:12.801 -05:00 [INF] Route matched with {action = "ConsultarPorZona", controller = "Estudiantes"}. Executing controller action with signature System.Collections.Generic.List`1[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse] ConsultarPorZona(System.String) on controller SistemaMovilidad.Controllers.EstudiantesController (SistemaMovilidad).
+2026-05-28 21:48:12.807 -05:00 [INF] Consulta por zona: santa 
+2026-05-28 21:48:12.809 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse, SistemaMovilidad.Objetos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-28 21:48:12.811 -05:00 [INF] Executed action SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorZona (SistemaMovilidad) in 5.6708ms
+2026-05-28 21:48:12.816 -05:00 [INF] Executed endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorZona (SistemaMovilidad)'
+2026-05-28 21:48:12.819 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/api/Estudiantes/ConsultarPorZona?zona=santa%20 - 200 null application/json; charset=utf-8 33.8719ms
+2026-05-28 21:48:24.917 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/api/Estudiantes/ConsultarPorZona?zona=santa%20rita - null null
+2026-05-28 21:48:24.930 -05:00 [INF] Executing endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorZona (SistemaMovilidad)'
+2026-05-28 21:48:24.932 -05:00 [INF] Route matched with {action = "ConsultarPorZona", controller = "Estudiantes"}. Executing controller action with signature System.Collections.Generic.List`1[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse] ConsultarPorZona(System.String) on controller SistemaMovilidad.Controllers.EstudiantesController (SistemaMovilidad).
+2026-05-28 21:48:24.936 -05:00 [INF] Consulta por zona: santa rita
+2026-05-28 21:48:24.938 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse, SistemaMovilidad.Objetos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-28 21:48:24.942 -05:00 [INF] Executed action SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorZona (SistemaMovilidad) in 6.61ms
+2026-05-28 21:48:24.945 -05:00 [INF] Executed endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorZona (SistemaMovilidad)'
+2026-05-28 21:48:24.947 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/api/Estudiantes/ConsultarPorZona?zona=santa%20rita - 200 null application/json; charset=utf-8 30.5499ms
+2026-05-28 21:48:42.736 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/api/Estudiantes/ConsultarPorUniversidad?institucion=Universitario - null null
+2026-05-28 21:48:42.744 -05:00 [INF] Executing endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorUniversidad (SistemaMovilidad)'
+2026-05-28 21:48:42.749 -05:00 [INF] Route matched with {action = "ConsultarPorUniversidad", controller = "Estudiantes"}. Executing controller action with signature System.Collections.Generic.List`1[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse] ConsultarPorUniversidad(System.String) on controller SistemaMovilidad.Controllers.EstudiantesController (SistemaMovilidad).
+2026-05-28 21:48:42.754 -05:00 [INF] Consulta por universidad: Universitario
+2026-05-28 21:48:42.756 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse, SistemaMovilidad.Objetos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-28 21:48:42.759 -05:00 [INF] Executed action SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorUniversidad (SistemaMovilidad) in 6.4494ms
+2026-05-28 21:48:42.763 -05:00 [INF] Executed endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorUniversidad (SistemaMovilidad)'
+2026-05-28 21:48:42.766 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/api/Estudiantes/ConsultarPorUniversidad?institucion=Universitario - 200 null application/json; charset=utf-8 30.1067ms
+2026-05-28 21:49:19.902 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/api/Estudiantes/ConsultarPorUniversidad?institucion=oelo - null null
+2026-05-28 21:49:19.912 -05:00 [INF] Executing endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorUniversidad (SistemaMovilidad)'
+2026-05-28 21:49:19.913 -05:00 [INF] Route matched with {action = "ConsultarPorUniversidad", controller = "Estudiantes"}. Executing controller action with signature System.Collections.Generic.List`1[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse] ConsultarPorUniversidad(System.String) on controller SistemaMovilidad.Controllers.EstudiantesController (SistemaMovilidad).
+2026-05-28 21:49:19.917 -05:00 [INF] Consulta por universidad: oelo
+2026-05-28 21:49:19.919 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse, SistemaMovilidad.Objetos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-28 21:49:19.922 -05:00 [INF] Executed action SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorUniversidad (SistemaMovilidad) in 5.3057ms
+2026-05-28 21:49:19.924 -05:00 [INF] Executed endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorUniversidad (SistemaMovilidad)'
+2026-05-28 21:49:19.927 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/api/Estudiantes/ConsultarPorUniversidad?institucion=oelo - 200 null application/json; charset=utf-8 24.1779ms
+2026-05-28 21:49:29.269 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/api/Estudiantes/ConsultarPorHorario?dia=lunes - null null
+2026-05-28 21:49:29.277 -05:00 [INF] Executing endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorHorario (SistemaMovilidad)'
+2026-05-28 21:49:29.281 -05:00 [INF] Route matched with {action = "ConsultarPorHorario", controller = "Estudiantes"}. Executing controller action with signature System.Collections.Generic.List`1[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse] ConsultarPorHorario(System.String, System.String) on controller SistemaMovilidad.Controllers.EstudiantesController (SistemaMovilidad).
+2026-05-28 21:49:29.286 -05:00 [INF] Consulta por horario: Dia=lunes, Jornada=todas
+2026-05-28 21:49:29.289 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse, SistemaMovilidad.Objetos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-28 21:49:29.292 -05:00 [INF] Executed action SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorHorario (SistemaMovilidad) in 7.509ms
+2026-05-28 21:49:29.294 -05:00 [INF] Executed endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorHorario (SistemaMovilidad)'
+2026-05-28 21:49:29.296 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/api/Estudiantes/ConsultarPorHorario?dia=lunes - 200 null application/json; charset=utf-8 26.945ms
+2026-05-28 21:49:45.152 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/api/Estudiantes/ReporteHorarioPorDia?dia=lunes - null null
+2026-05-28 21:49:45.159 -05:00 [INF] Executing endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ReporteHorarioPorDia (SistemaMovilidad)'
+2026-05-28 21:49:45.164 -05:00 [INF] Route matched with {action = "ReporteHorarioPorDia", controller = "Estudiantes"}. Executing controller action with signature ReporteHorarioDiaResponse ReporteHorarioPorDia(System.String) on controller SistemaMovilidad.Controllers.EstudiantesController (SistemaMovilidad).
+2026-05-28 21:49:45.172 -05:00 [INF] Reporte generado para: lunes
+2026-05-28 21:49:45.178 -05:00 [INF] Executing ObjectResult, writing value of type 'SistemaMovilidad.Objetos.DTOs.EstudianteDtos+ReporteHorarioDiaResponse'.
+2026-05-28 21:49:45.186 -05:00 [INF] Executed action SistemaMovilidad.Controllers.EstudiantesController.ReporteHorarioPorDia (SistemaMovilidad) in 16.3561ms
+2026-05-28 21:49:45.189 -05:00 [INF] Executed endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ReporteHorarioPorDia (SistemaMovilidad)'
+2026-05-28 21:49:45.191 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/api/Estudiantes/ReporteHorarioPorDia?dia=lunes - 200 null application/json; charset=utf-8 38.9ms
+2026-05-28 21:50:33.287 -05:00 [INF] Sistema de Movilidad Estudiantil iniciado correctamente.
+2026-05-28 21:50:33.505 -05:00 [INF] Now listening on: https://localhost:7096
+2026-05-28 21:50:33.511 -05:00 [INF] Now listening on: http://localhost:5087
+2026-05-28 21:50:33.650 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 21:50:33.652 -05:00 [INF] Hosting environment: Development
+2026-05-28 21:50:33.655 -05:00 [INF] Content root path: C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad
+2026-05-28 21:50:34.890 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/swagger/index.html - null null
+2026-05-28 21:50:35.045 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-28 21:50:35.046 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/_vs/browserLink - null null
+2026-05-28 21:50:35.049 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/swagger/index.html - 200 null text/html;charset=utf-8 159.4442ms
+2026-05-28 21:50:35.051 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 5.9292ms
+2026-05-28 21:50:35.192 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/_vs/browserLink - 200 null text/javascript; charset=UTF-8 146.2875ms
+2026-05-28 21:50:35.228 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/swagger/v1/swagger.json - null null
+2026-05-28 21:50:35.311 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 82.4952ms
+2026-05-28 22:00:10.125 -05:00 [INF] Sistema de Movilidad Estudiantil iniciado correctamente.
+2026-05-28 22:00:10.316 -05:00 [INF] Now listening on: https://localhost:7096
+2026-05-28 22:00:10.325 -05:00 [INF] Now listening on: http://localhost:5087
+2026-05-28 22:00:10.436 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 22:00:10.439 -05:00 [INF] Hosting environment: Development
+2026-05-28 22:00:10.440 -05:00 [INF] Content root path: C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad
+2026-05-28 22:00:11.888 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/swagger/index.html - null null
+2026-05-28 22:00:12.073 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/swagger/index.html - 200 null text/html;charset=utf-8 187.2832ms
+2026-05-28 22:00:12.080 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-28 22:00:12.080 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/_vs/browserLink - null null
+2026-05-28 22:00:12.158 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 77.5322ms
+2026-05-28 22:00:12.231 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/_vs/browserLink - 200 null text/javascript; charset=UTF-8 150.6317ms
+2026-05-28 22:00:12.257 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/swagger/v1/swagger.json - null null
+2026-05-28 22:00:12.271 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.2906ms
+2026-05-28 22:00:32.275 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/api/Estudiantes/ObtenerTodos - null null
+2026-05-28 22:00:32.294 -05:00 [INF] Executing endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ObtenerTodos (SistemaMovilidad)'
+2026-05-28 22:00:32.327 -05:00 [INF] Route matched with {action = "ObtenerTodos", controller = "Estudiantes"}. Executing controller action with signature System.Collections.Generic.List`1[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse] ObtenerTodos() on controller SistemaMovilidad.Controllers.EstudiantesController (SistemaMovilidad).
+2026-05-28 22:00:32.345 -05:00 [INF] Consulta: ObtenerTodos ejecutado.
+2026-05-28 22:00:32.373 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse, SistemaMovilidad.Objetos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-28 22:00:32.390 -05:00 [INF] Executed action SistemaMovilidad.Controllers.EstudiantesController.ObtenerTodos (SistemaMovilidad) in 54.2948ms
+2026-05-28 22:00:32.394 -05:00 [INF] Executed endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ObtenerTodos (SistemaMovilidad)'
+2026-05-28 22:00:32.397 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/api/Estudiantes/ObtenerTodos - 200 null application/json; charset=utf-8 121.8541ms
+2026-05-28 22:00:32.439 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/favicon.ico - null null
+2026-05-28 22:00:32.446 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/favicon.ico - 404 0 null 6.7548ms
+2026-05-28 22:00:32.453 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7096/favicon.ico, Response status code: 404
+2026-05-28 22:02:32.250 -05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7096/api/Estudiantes/RegistrarEstudiante - null null
+2026-05-28 22:02:32.266 -05:00 [INF] CORS policy execution successful.
+2026-05-28 22:02:32.270 -05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7096/api/Estudiantes/RegistrarEstudiante - 204 null null 19.8493ms
+2026-05-28 22:02:32.277 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7096/api/Estudiantes/RegistrarEstudiante - application/json 294
+2026-05-28 22:02:32.283 -05:00 [INF] CORS policy execution successful.
+2026-05-28 22:02:32.285 -05:00 [INF] Executing endpoint 'SistemaMovilidad.Controllers.EstudiantesController.Registrar (SistemaMovilidad)'
+2026-05-28 22:02:32.298 -05:00 [INF] Route matched with {action = "Registrar", controller = "Estudiantes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse] Registrar(RegistroEstudianteRequest) on controller SistemaMovilidad.Controllers.EstudiantesController (SistemaMovilidad).
+2026-05-28 22:02:32.361 -05:00 [INF] Estudiante registrado: Emanuel carmona gaviria - Documento: 1017930467
+2026-05-28 22:02:32.366 -05:00 [INF] Executing OkObjectResult, writing value of type 'SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse'.
+2026-05-28 22:02:32.392 -05:00 [INF] Executed action SistemaMovilidad.Controllers.EstudiantesController.Registrar (SistemaMovilidad) in 90.2697ms
+2026-05-28 22:02:32.397 -05:00 [INF] Executed endpoint 'SistemaMovilidad.Controllers.EstudiantesController.Registrar (SistemaMovilidad)'
+2026-05-28 22:02:32.402 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7096/api/Estudiantes/RegistrarEstudiante - 200 null application/json; charset=utf-8 124.1414ms
+2026-05-28 22:02:40.987 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/api/Estudiantes/ObtenerTodos - null null
+2026-05-28 22:02:41.002 -05:00 [INF] CORS policy execution successful.
+2026-05-28 22:02:41.006 -05:00 [INF] Executing endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ObtenerTodos (SistemaMovilidad)'
+2026-05-28 22:02:41.008 -05:00 [INF] Route matched with {action = "ObtenerTodos", controller = "Estudiantes"}. Executing controller action with signature System.Collections.Generic.List`1[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse] ObtenerTodos() on controller SistemaMovilidad.Controllers.EstudiantesController (SistemaMovilidad).
+2026-05-28 22:02:41.011 -05:00 [INF] Consulta: ObtenerTodos ejecutado.
+2026-05-28 22:02:41.013 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse, SistemaMovilidad.Objetos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-28 22:02:41.016 -05:00 [INF] Executed action SistemaMovilidad.Controllers.EstudiantesController.ObtenerTodos (SistemaMovilidad) in 4.529ms
+2026-05-28 22:02:41.019 -05:00 [INF] Executed endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ObtenerTodos (SistemaMovilidad)'
+2026-05-28 22:02:41.021 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/api/Estudiantes/ObtenerTodos - 200 null application/json; charset=utf-8 33.7946ms
+2026-05-28 22:02:56.042 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/api/Estudiantes/ConsultarPorZona?zona=Santa%20Rita - null null
+2026-05-28 22:02:56.048 -05:00 [INF] CORS policy execution successful.
+2026-05-28 22:02:56.050 -05:00 [INF] Executing endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorZona (SistemaMovilidad)'
+2026-05-28 22:02:56.056 -05:00 [INF] Route matched with {action = "ConsultarPorZona", controller = "Estudiantes"}. Executing controller action with signature System.Collections.Generic.List`1[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse] ConsultarPorZona(System.String) on controller SistemaMovilidad.Controllers.EstudiantesController (SistemaMovilidad).
+2026-05-28 22:02:56.074 -05:00 [INF] Consulta por zona: Santa Rita
+2026-05-28 22:02:56.077 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse, SistemaMovilidad.Objetos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-28 22:02:56.080 -05:00 [INF] Executed action SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorZona (SistemaMovilidad) in 17.4418ms
+2026-05-28 22:02:56.085 -05:00 [INF] Executed endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorZona (SistemaMovilidad)'
+2026-05-28 22:02:56.087 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/api/Estudiantes/ConsultarPorZona?zona=Santa%20Rita - 200 null application/json; charset=utf-8 45.41ms
+2026-05-28 22:03:04.613 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/api/Estudiantes/ConsultarPorUniversidad?institucion=Universidad%20de%20Antioquia - null null
+2026-05-28 22:03:04.619 -05:00 [INF] CORS policy execution successful.
+2026-05-28 22:03:04.621 -05:00 [INF] Executing endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorUniversidad (SistemaMovilidad)'
+2026-05-28 22:03:04.626 -05:00 [INF] Route matched with {action = "ConsultarPorUniversidad", controller = "Estudiantes"}. Executing controller action with signature System.Collections.Generic.List`1[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse] ConsultarPorUniversidad(System.String) on controller SistemaMovilidad.Controllers.EstudiantesController (SistemaMovilidad).
+2026-05-28 22:03:04.631 -05:00 [INF] Consulta por universidad: Universidad de Antioquia
+2026-05-28 22:03:04.633 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse, SistemaMovilidad.Objetos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-28 22:03:04.636 -05:00 [INF] Executed action SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorUniversidad (SistemaMovilidad) in 6.4674ms
+2026-05-28 22:03:04.640 -05:00 [INF] Executed endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorUniversidad (SistemaMovilidad)'
+2026-05-28 22:03:04.642 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/api/Estudiantes/ConsultarPorUniversidad?institucion=Universidad%20de%20Antioquia - 200 null application/json; charset=utf-8 28.9422ms
+2026-05-28 22:03:11.168 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/api/Estudiantes/ConsultarPorHorario?dia=Lunes - null null
+2026-05-28 22:03:11.176 -05:00 [INF] CORS policy execution successful.
+2026-05-28 22:03:11.178 -05:00 [INF] Executing endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorHorario (SistemaMovilidad)'
+2026-05-28 22:03:11.183 -05:00 [INF] Route matched with {action = "ConsultarPorHorario", controller = "Estudiantes"}. Executing controller action with signature System.Collections.Generic.List`1[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse] ConsultarPorHorario(System.String, System.String) on controller SistemaMovilidad.Controllers.EstudiantesController (SistemaMovilidad).
+2026-05-28 22:03:11.188 -05:00 [INF] Consulta por horario: Dia=Lunes, Jornada=todas
+2026-05-28 22:03:11.191 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SistemaMovilidad.Objetos.DTOs.EstudianteDtos+EstudianteResponse, SistemaMovilidad.Objetos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-28 22:03:11.194 -05:00 [INF] Executed action SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorHorario (SistemaMovilidad) in 7.543ms
+2026-05-28 22:03:11.196 -05:00 [INF] Executed endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ConsultarPorHorario (SistemaMovilidad)'
+2026-05-28 22:03:11.197 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/api/Estudiantes/ConsultarPorHorario?dia=Lunes - 200 null application/json; charset=utf-8 29.1947ms
+2026-05-28 22:03:18.946 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/api/Estudiantes/ReporteHorarioPorDia?dia=Lunes - null null
+2026-05-28 22:03:18.952 -05:00 [INF] CORS policy execution successful.
+2026-05-28 22:03:18.955 -05:00 [INF] Executing endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ReporteHorarioPorDia (SistemaMovilidad)'
+2026-05-28 22:03:18.959 -05:00 [INF] Route matched with {action = "ReporteHorarioPorDia", controller = "Estudiantes"}. Executing controller action with signature ReporteHorarioDiaResponse ReporteHorarioPorDia(System.String) on controller SistemaMovilidad.Controllers.EstudiantesController (SistemaMovilidad).
+2026-05-28 22:03:18.964 -05:00 [INF] Reporte generado para: Lunes
+2026-05-28 22:03:18.970 -05:00 [INF] Executing ObjectResult, writing value of type 'SistemaMovilidad.Objetos.DTOs.EstudianteDtos+ReporteHorarioDiaResponse'.
+2026-05-28 22:03:18.979 -05:00 [INF] Executed action SistemaMovilidad.Controllers.EstudiantesController.ReporteHorarioPorDia (SistemaMovilidad) in 16.5695ms
+2026-05-28 22:03:18.982 -05:00 [INF] Executed endpoint 'SistemaMovilidad.Controllers.EstudiantesController.ReporteHorarioPorDia (SistemaMovilidad)'
+2026-05-28 22:03:18.984 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/api/Estudiantes/ReporteHorarioPorDia?dia=Lunes - 200 null application/json; charset=utf-8 37.804ms
+2026-05-28 22:06:04.937 -05:00 [INF] Sistema de Movilidad Estudiantil iniciado correctamente.
+2026-05-28 22:06:05.167 -05:00 [INF] Now listening on: https://localhost:7096
+2026-05-28 22:06:05.172 -05:00 [INF] Now listening on: http://localhost:5087
+2026-05-28 22:06:05.242 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 22:06:05.243 -05:00 [INF] Hosting environment: Development
+2026-05-28 22:06:05.244 -05:00 [INF] Content root path: C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad
+2026-05-28 22:06:06.826 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/swagger/index.html - null null
+2026-05-28 22:06:07.072 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/swagger/index.html - 200 null text/html;charset=utf-8 248.2808ms
+2026-05-28 22:06:07.159 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-28 22:06:07.162 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/_vs/browserLink - null null
+2026-05-28 22:06:07.230 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 71.0039ms
+2026-05-28 22:06:07.281 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/_vs/browserLink - 200 null text/javascript; charset=UTF-8 118.5619ms
+2026-05-28 22:06:07.353 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/swagger/v1/swagger.json - null null
+2026-05-28 22:06:07.389 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 35.6419ms
+2026-05-28 22:11:34.069 -05:00 [INF] Sistema de Movilidad Estudiantil iniciado correctamente.
+2026-05-28 22:11:34.216 -05:00 [INF] Now listening on: https://localhost:7096
+2026-05-28 22:11:34.218 -05:00 [INF] Now listening on: http://localhost:5087
+2026-05-28 22:11:34.272 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 22:11:34.273 -05:00 [INF] Hosting environment: Development
+2026-05-28 22:11:34.274 -05:00 [INF] Content root path: C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad
+2026-05-28 22:11:35.960 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/swagger/index.html - null null
+2026-05-28 22:11:36.123 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/swagger/index.html - 200 null text/html;charset=utf-8 165.0847ms
+2026-05-28 22:11:36.393 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-28 22:11:36.397 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/_vs/browserLink - null null
+2026-05-28 22:11:36.411 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 18.0947ms
+2026-05-28 22:11:36.436 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.7607ms
+2026-05-28 22:11:36.492 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/swagger/v1/swagger.json - null null
+2026-05-28 22:11:36.509 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.8236ms
+2026-05-28 22:13:34.624 -05:00 [INF] Sistema de Movilidad Estudiantil iniciado correctamente.
+2026-05-28 22:13:34.771 -05:00 [INF] Now listening on: https://localhost:7096
+2026-05-28 22:13:34.774 -05:00 [INF] Now listening on: http://localhost:5087
+2026-05-28 22:13:34.884 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 22:13:34.886 -05:00 [INF] Hosting environment: Development
+2026-05-28 22:13:34.888 -05:00 [INF] Content root path: C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad
+2026-05-28 22:13:36.397 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/swagger/index.html - null null
+2026-05-28 22:13:36.552 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/swagger/index.html - 200 null text/html;charset=utf-8 157.0093ms
+2026-05-28 22:13:36.998 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-28 22:13:37.001 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/_vs/browserLink - null null
+2026-05-28 22:13:37.017 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 18.2701ms
+2026-05-28 22:13:37.039 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.4744ms
+2026-05-28 22:13:37.096 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7096/swagger/v1/swagger.json - null null
+2026-05-28 22:13:37.108 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7096/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.8183ms

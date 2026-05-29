@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SistemaMovilidad.DTOs;
+using Serilog;
 using SistemaMovilidad.Interfaces;
-using static SistemaMovilidad.DTOs.EstudianteDtos;
+using static SistemaMovilidad.Objetos.DTOs.EstudianteDtos;
 
 namespace SistemaMovilidad.Controllers
 {
@@ -19,6 +19,7 @@ namespace SistemaMovilidad.Controllers
 		[HttpGet("ObtenerTodos")]
 		public List<EstudianteResponse> ObtenerTodos()
 		{
+			Log.Information("Consulta: ObtenerTodos ejecutado.");
 			return this.iEstudiante.ObtenerTodos();
 		}
 
@@ -32,10 +33,12 @@ namespace SistemaMovilidad.Controllers
 			}
 			catch (InvalidOperationException ex)
 			{
+				Log.Warning("Registro duplicado: {Mensaje}", ex.Message);
 				return Conflict(new { mensaje = ex.Message });
 			}
 			catch (ArgumentException ex)
 			{
+				Log.Warning("Datos inválidos: {Mensaje}", ex.Message);
 				return BadRequest(new { mensaje = ex.Message });
 			}
 		}

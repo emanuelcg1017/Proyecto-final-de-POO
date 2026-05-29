@@ -1,0 +1,12 @@
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Objetos\bin\Debug\net8.0\SistemaMovilidad.Objetos.deps.json
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Objetos\bin\Debug\net8.0\SistemaMovilidad.Objetos.dll
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Objetos\bin\Debug\net8.0\SistemaMovilidad.Objetos.pdb
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Objetos\obj\Debug\net8.0\SistemaMovilidad.Objetos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Objetos\obj\Debug\net8.0\SistemaMovilidad.Objetos.AssemblyInfoInputs.cache
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Objetos\obj\Debug\net8.0\SistemaMovilidad.Objetos.AssemblyInfo.cs
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Objetos\obj\Debug\net8.0\SistemaMovilidad.Objetos.csproj.CoreCompileInputs.cache
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Objetos\obj\Debug\net8.0\SistemaMovilidad.Objetos.sourcelink.json
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Objetos\obj\Debug\net8.0\SistemaMovilidad.Objetos.dll
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Objetos\obj\Debug\net8.0\refint\SistemaMovilidad.Objetos.dll
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Objetos\obj\Debug\net8.0\SistemaMovilidad.Objetos.pdb
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Objetos\obj\Debug\net8.0\ref\SistemaMovilidad.Objetos.dll

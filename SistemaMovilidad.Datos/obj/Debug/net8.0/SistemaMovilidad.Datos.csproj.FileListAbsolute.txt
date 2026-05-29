@@ -1,0 +1,16 @@
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Datos\bin\Debug\net8.0\SistemaMovilidad.Datos.deps.json
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Datos\bin\Debug\net8.0\SistemaMovilidad.Datos.dll
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Datos\bin\Debug\net8.0\SistemaMovilidad.Datos.pdb
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Datos\bin\Debug\net8.0\SistemaMovilidad.Objetos.dll
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Datos\bin\Debug\net8.0\SistemaMovilidad.Objetos.pdb
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Datos\obj\Debug\net8.0\SistemaMovilidad.Datos.csproj.AssemblyReference.cache
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Datos\obj\Debug\net8.0\SistemaMovilidad.Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Datos\obj\Debug\net8.0\SistemaMovilidad.Datos.AssemblyInfoInputs.cache
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Datos\obj\Debug\net8.0\SistemaMovilidad.Datos.AssemblyInfo.cs
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Datos\obj\Debug\net8.0\SistemaMovilidad.Datos.csproj.CoreCompileInputs.cache
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Datos\obj\Debug\net8.0\SistemaMovilidad.Datos.sourcelink.json
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Datos\obj\Debug\net8.0\SistemaM.5F3EB87B.Up2Date
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Datos\obj\Debug\net8.0\SistemaMovilidad.Datos.dll
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Datos\obj\Debug\net8.0\refint\SistemaMovilidad.Datos.dll
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Datos\obj\Debug\net8.0\SistemaMovilidad.Datos.pdb
+C:\Users\emanu\OneDrive\Desktop\Programacion\Programacion 2026-1\Trabajos De POO\Proyecto final\SistemaMovilidad\SistemaMovilidad.Datos\obj\Debug\net8.0\ref\SistemaMovilidad.Datos.dll

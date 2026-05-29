@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SistemaMovilidad.Datos/1.0.0": {
+        "dependencies": {
+          "SistemaMovilidad.Objetos": "1.0.0"
+        },
+        "runtime": {
+          "SistemaMovilidad.Datos.dll": {}
+        }
+      },
+      "SistemaMovilidad.Objetos/1.0.0": {
+        "runtime": {
+          "SistemaMovilidad.Objetos.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SistemaMovilidad.Datos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SistemaMovilidad.Objetos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

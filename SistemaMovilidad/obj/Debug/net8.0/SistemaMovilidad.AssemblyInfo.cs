@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SistemaMovilidad")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+007c13d658d3d8264782557e1c56e0e76065c173")]
 [assembly: System.Reflection.AssemblyProductAttribute("SistemaMovilidad")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SistemaMovilidad")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,4 @@
-﻿using static SistemaMovilidad.DTOs.EstudianteDtos;
+﻿using static SistemaMovilidad.Objetos.DTOs.EstudianteDtos;
 
 namespace SistemaMovilidad.Interfaces
 {

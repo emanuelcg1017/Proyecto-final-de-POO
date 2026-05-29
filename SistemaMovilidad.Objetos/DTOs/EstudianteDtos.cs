@@ -1,4 +1,4 @@
-﻿namespace SistemaMovilidad.DTOs
+﻿namespace SistemaMovilidad.Objetos.DTOs
 {
 	public class EstudianteDtos
 	{
